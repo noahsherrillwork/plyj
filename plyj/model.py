@@ -8,6 +8,7 @@ class SourceElement(object):
     def __init__(self):
         super(SourceElement, self).__init__()
         self._fields = []
+        self.lineno = 0
 
     def __repr__(self):
         equals = ("{0}={1!r}".format(k, getattr(self, k))
